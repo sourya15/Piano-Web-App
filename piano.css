@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    background-color : lightblue;
+    margin: 0;
+    padding: 0;
+
+}
+
+.piano{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.key{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.white {
+    width: 8%;
+    min-width: 60px;
+    height: 70%;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: black;
+}
+
+.black{
+    width: 8%;
+    height: 55%;
+    margin-left: -4%;
+    margin-right: -4%;
+    z-index: 1;
+    background-color: black;
+    border: 1px solid #ccc ;
+    color: white;
+}
+
+.white.active{
+    background-color: rgb(247, 232, 232);
+}
+.black.active{
+    background-color: #333;
+}
